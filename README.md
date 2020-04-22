@@ -8,6 +8,7 @@ a full vegan application system with server side and client side
 - Vuejs
 - Typescript
 - Bulma
+- Deploy in https://www.netlify.com/
 
 # Backend
 - NestJS
