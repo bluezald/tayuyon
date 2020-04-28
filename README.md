@@ -1,10 +1,19 @@
 # vegan-on
 a full vegan application system with server side and client side
 
-![Vegan-on idea](https://raw.githubusercontent.com/bluezald/vegan-on/master/vegan-on.jpg?token=AAH4T5V5ZB5JVAU5JO3OE6S6UE4BG)
+![Vegan-on idea](https://github.com/bluezald/vegan-on/blob/master/vegan-on.jpg)
 
 # Frontend Consumer
 - iOS
+### Features
+- Browse Recipes
+- Browse Tutorials (Cooking or Backyard Farming)
+- Browse Sellers
+
+### Technologies
+- RxSwift
+- SwiftUI
+- fastlane tools
 
 # Frontend Admin
 - Vuejs
