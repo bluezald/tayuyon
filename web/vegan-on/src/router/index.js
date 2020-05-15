@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import AdminDashboard from '@/views/AdminDashboard'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -8,6 +10,11 @@ const routes = [
     path: '/login',
     name: 'LoginView',
     component: () => import('@/views/LoginView.vue')
+  },
+  {
+    path: '/',
+    name: 'AdminDashboard',
+    component: AdminDashboard
   },
   // Default route
   {
