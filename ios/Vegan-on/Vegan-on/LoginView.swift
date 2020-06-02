@@ -31,15 +31,24 @@ struct LoginView: View {
         SecureField("Password", text: self.$password)
           .padding()
           .cornerRadius(20.0)
-        Button(action: {}) {
+        NavigationLink(destination: ContentView()) {
           Text("Sign In")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(width: 300, height: 50)
-            .background(Color.green)
-            .cornerRadius(15.0)
+              .font(.headline)
+              .foregroundColor(.white)
+              .padding()
+              .frame(width: 300, height: 50)
+              .background(Color.green)
+              .cornerRadius(15.0)
         }
+//        Button(action: {}) {
+//          Text("Sign In")
+//            .font(.headline)
+//            .foregroundColor(.white)
+//            .padding()
+//            .frame(width: 300, height: 50)
+//            .background(Color.green)
+//            .cornerRadius(15.0)
+//        }
       }
         .padding([.leading, .trailing], 27.5)
     }
