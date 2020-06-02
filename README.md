@@ -24,13 +24,13 @@ a full vegan application system with server side and client side
 # Backend
 - NestJS
 ## REST API
-###/products?type=['tutorials', 'goods']
+### /products?type=['tutorials', 'goods']
 - Methods: GET, POST, PUT, DELETE
 - Used in the homepage and discover page when browsing for vegan products
-###/stores
+### /stores
 - Methods: GET, POST, PUT, DELETE
 - Gets the locations of the stores to be displayed in a map view
-###/orders
+### /orders
 
 # Infrastructure
 - AWS Cognito - User Management
