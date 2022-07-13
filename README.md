@@ -1,8 +1,11 @@
-![Vegan-on-logo](https://raw.githubusercontent.com/bluezald/vegan-on/master/logo.png?token=AAH4T5RGVAHGN2GUQY7GKES62XVYU)
----
-a full vegan application system with server side and client side
+
+# Tayuyon
+- a full sustainability lifestyle application system with server side and client side (Starting on iOS version)
 
 ![Vegan-on idea](https://github.com/bluezald/vegan-on/blob/master/vegan-on.jpg)
+
+# Figma:
+https://www.figma.com/file/7wXpjt0YiKawtiiFN72qHX/Grocery-App-%F0%9F%A5%A6-(Community)?node-id=102%3A49
 
 # Frontend Consumer
 - iOS
