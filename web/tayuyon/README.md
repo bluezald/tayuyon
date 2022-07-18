@@ -1,4 +1,4 @@
-# vegan-on
+# tayuyon
 
 ## Project setup
 ```

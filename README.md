@@ -1,3 +1,6 @@
+## NOTICE:
+- The project will be refactored to a different branding soon, will be named maybe - "Tayuyon" A cebuano term about sustainability
+
 ![Vegan-on-logo](https://raw.githubusercontent.com/bluezald/vegan-on/master/logo.png?token=AAH4T5RGVAHGN2GUQY7GKES62XVYU)
 ---
 a full vegan application system with server side and client side
