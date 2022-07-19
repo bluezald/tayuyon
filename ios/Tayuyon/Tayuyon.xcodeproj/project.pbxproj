@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D65593ED2886A63F0017882D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593EC2886A63F0017882D /* Tests_iOS.swift */; };
+		D65593EF2886A63F0017882D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593EE2886A63F0017882D /* Tests_iOSLaunchTests.swift */; };
+		D65593F92886A63F0017882D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593F82886A63F0017882D /* Tests_macOS.swift */; };
+		D65593FB2886A63F0017882D /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593FA2886A63F0017882D /* Tests_macOSLaunchTests.swift */; };
+		D65593FC2886A63F0017882D /* TayuyonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593D42886A63E0017882D /* TayuyonApp.swift */; };
+		D65593FD2886A63F0017882D /* TayuyonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593D42886A63E0017882D /* TayuyonApp.swift */; };
+		D65593FE2886A63F0017882D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593D52886A63E0017882D /* ContentView.swift */; };
+		D65593FF2886A63F0017882D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65593D52886A63E0017882D /* ContentView.swift */; };
+		D65594002886A63F0017882D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65593D62886A63F0017882D /* Assets.xcassets */; };
+		D65594012886A63F0017882D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65593D62886A63F0017882D /* Assets.xcassets */; };
+		D65594132886A68B0017882D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65594122886A68B0017882D /* LoginView.swift */; };
+		D65594162886AA020017882D /* FirebaseAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65594152886AA020017882D /* FirebaseAuthProtocol.swift */; };
+		D65594192886B19F0017882D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D65594182886B19F0017882D /* FirebaseAuth */; };
+		D655941B2886B19F0017882D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D655941A2886B19F0017882D /* FirebaseDatabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D65593E92886A63F0017882D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65593CF2886A63E0017882D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65593DA2886A63F0017882D;
+			remoteInfo = "Tayuyon (iOS)";
+		};
+		D65593F52886A63F0017882D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65593CF2886A63E0017882D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65593E02886A63F0017882D;
+			remoteInfo = "Tayuyon (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D65593D42886A63E0017882D /* TayuyonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TayuyonApp.swift; sourceTree = "<group>"; };
+		D65593D52886A63E0017882D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D65593D62886A63F0017882D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D65593DB2886A63F0017882D /* Tayuyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tayuyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65593E12886A63F0017882D /* Tayuyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tayuyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65593E32886A63F0017882D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D65593E82886A63F0017882D /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65593EC2886A63F0017882D /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		D65593EE2886A63F0017882D /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		D65593F42886A63F0017882D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65593F82886A63F0017882D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		D65593FA2886A63F0017882D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		D65594122886A68B0017882D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D65594152886AA020017882D /* FirebaseAuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65593D82886A63F0017882D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D655941B2886B19F0017882D /* FirebaseDatabase in Frameworks */,
+				D65594192886B19F0017882D /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593DE2886A63F0017882D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593E52886A63F0017882D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593F12886A63F0017882D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D65593CE2886A63E0017882D = {
+			isa = PBXGroup;
+			children = (
+				D65593D32886A63E0017882D /* Shared */,
+				D65593E22886A63F0017882D /* macOS */,
+				D65593EB2886A63F0017882D /* Tests iOS */,
+				D65593F72886A63F0017882D /* Tests macOS */,
+				D65593DC2886A63F0017882D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65593D32886A63E0017882D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D65594142886A9B90017882D /* Vendors */,
+				D65594112886A6680017882D /* Login */,
+				D65593D42886A63E0017882D /* TayuyonApp.swift */,
+				D65593D52886A63E0017882D /* ContentView.swift */,
+				D65593D62886A63F0017882D /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D65593DC2886A63F0017882D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65593DB2886A63F0017882D /* Tayuyon.app */,
+				D65593E12886A63F0017882D /* Tayuyon.app */,
+				D65593E82886A63F0017882D /* Tests iOS.xctest */,
+				D65593F42886A63F0017882D /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65593E22886A63F0017882D /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D65593E32886A63F0017882D /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D65593EB2886A63F0017882D /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D65593EC2886A63F0017882D /* Tests_iOS.swift */,
+				D65593EE2886A63F0017882D /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		D65593F72886A63F0017882D /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D65593F82886A63F0017882D /* Tests_macOS.swift */,
+				D65593FA2886A63F0017882D /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		D65594112886A6680017882D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D65594122886A68B0017882D /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D65594142886A9B90017882D /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				D65594152886AA020017882D /* FirebaseAuthProtocol.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65593DA2886A63F0017882D /* Tayuyon (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65594042886A63F0017882D /* Build configuration list for PBXNativeTarget "Tayuyon (iOS)" */;
+			buildPhases = (
+				D65593D72886A63F0017882D /* Sources */,
+				D65593D82886A63F0017882D /* Frameworks */,
+				D65593D92886A63F0017882D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tayuyon (iOS)";
+			packageProductDependencies = (
+				D65594182886B19F0017882D /* FirebaseAuth */,
+				D655941A2886B19F0017882D /* FirebaseDatabase */,
+			);
+			productName = "Tayuyon (iOS)";
+			productReference = D65593DB2886A63F0017882D /* Tayuyon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D65593E02886A63F0017882D /* Tayuyon (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65594072886A63F0017882D /* Build configuration list for PBXNativeTarget "Tayuyon (macOS)" */;
+			buildPhases = (
+				D65593DD2886A63F0017882D /* Sources */,
+				D65593DE2886A63F0017882D /* Frameworks */,
+				D65593DF2886A63F0017882D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tayuyon (macOS)";
+			productName = "Tayuyon (macOS)";
+			productReference = D65593E12886A63F0017882D /* Tayuyon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D65593E72886A63F0017882D /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D655940A2886A63F0017882D /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				D65593E42886A63F0017882D /* Sources */,
+				D65593E52886A63F0017882D /* Frameworks */,
+				D65593E62886A63F0017882D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65593EA2886A63F0017882D /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = D65593E82886A63F0017882D /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D65593F32886A63F0017882D /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D655940D2886A63F0017882D /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				D65593F02886A63F0017882D /* Sources */,
+				D65593F12886A63F0017882D /* Frameworks */,
+				D65593F22886A63F0017882D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65593F62886A63F0017882D /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = D65593F42886A63F0017882D /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65593CF2886A63E0017882D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D65593DA2886A63F0017882D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D65593E02886A63F0017882D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D65593E72886A63F0017882D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D65593DA2886A63F0017882D;
+					};
+					D65593F32886A63F0017882D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D65593E02886A63F0017882D;
+					};
+				};
+			};
+			buildConfigurationList = D65593D22886A63E0017882D /* Build configuration list for PBXProject "Tayuyon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65593CE2886A63E0017882D;
+			packageReferences = (
+				D65594172886B19F0017882D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D65593DC2886A63F0017882D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65593DA2886A63F0017882D /* Tayuyon (iOS) */,
+				D65593E02886A63F0017882D /* Tayuyon (macOS) */,
+				D65593E72886A63F0017882D /* Tests iOS */,
+				D65593F32886A63F0017882D /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65593D92886A63F0017882D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65594002886A63F0017882D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593DF2886A63F0017882D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65594012886A63F0017882D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593E62886A63F0017882D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593F22886A63F0017882D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65593D72886A63F0017882D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65594132886A68B0017882D /* LoginView.swift in Sources */,
+				D65593FE2886A63F0017882D /* ContentView.swift in Sources */,
+				D65594162886AA020017882D /* FirebaseAuthProtocol.swift in Sources */,
+				D65593FC2886A63F0017882D /* TayuyonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593DD2886A63F0017882D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65593FF2886A63F0017882D /* ContentView.swift in Sources */,
+				D65593FD2886A63F0017882D /* TayuyonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593E42886A63F0017882D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65593EF2886A63F0017882D /* Tests_iOSLaunchTests.swift in Sources */,
+				D65593ED2886A63F0017882D /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65593F02886A63F0017882D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65593FB2886A63F0017882D /* Tests_macOSLaunchTests.swift in Sources */,
+				D65593F92886A63F0017882D /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D65593EA2886A63F0017882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65593DA2886A63F0017882D /* Tayuyon (iOS) */;
+			targetProxy = D65593E92886A63F0017882D /* PBXContainerItemProxy */;
+		};
+		D65593F62886A63F0017882D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65593E02886A63F0017882D /* Tayuyon (macOS) */;
+			targetProxy = D65593F52886A63F0017882D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D65594022886A63F0017882D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D65594032886A63F0017882D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D65594052886A63F0017882D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezald.Tayuyon;
+				PRODUCT_NAME = Tayuyon;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65594062886A63F0017882D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezald.Tayuyon;
+				PRODUCT_NAME = Tayuyon;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65594082886A63F0017882D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezald.Tayuyon;
+				PRODUCT_NAME = Tayuyon;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D65594092886A63F0017882D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluezald.Tayuyon;
+				PRODUCT_NAME = Tayuyon;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D655940B2886A63F0017882D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluezald.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tayuyon (iOS)";
+			};
+			name = Debug;
+		};
+		D655940C2886A63F0017882D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluezald.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tayuyon (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D655940E2886A63F0017882D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluezald.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Tayuyon (macOS)";
+			};
+			name = Debug;
+		};
+		D655940F2886A63F0017882D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluezald.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Tayuyon (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65593D22886A63E0017882D /* Build configuration list for PBXProject "Tayuyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65594022886A63F0017882D /* Debug */,
+				D65594032886A63F0017882D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65594042886A63F0017882D /* Build configuration list for PBXNativeTarget "Tayuyon (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65594052886A63F0017882D /* Debug */,
+				D65594062886A63F0017882D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65594072886A63F0017882D /* Build configuration list for PBXNativeTarget "Tayuyon (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65594082886A63F0017882D /* Debug */,
+				D65594092886A63F0017882D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D655940A2886A63F0017882D /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D655940B2886A63F0017882D /* Debug */,
+				D655940C2886A63F0017882D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D655940D2886A63F0017882D /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D655940E2886A63F0017882D /* Debug */,
+				D655940F2886A63F0017882D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D65594172886B19F0017882D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D65594182886B19F0017882D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65594172886B19F0017882D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D655941A2886B19F0017882D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65594172886B19F0017882D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D65593CF2886A63E0017882D /* Project object */;
+}
