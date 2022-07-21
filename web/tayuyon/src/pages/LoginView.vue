@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section class="section card">
+    <section class="section">
         <div class="container">
           <div class="columns is-vcentered">
-            <div class="column"><img src="https://bulma.dev/placeholder/pictures/bg_16-9.svg?primary=00d1b2" alt=""></div>
+            <div class="column"><img src="https://images.pexels.com/photos/414807/pexels-photo-414807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
             <div class="column">
               <div class="hero-body">
                 <div class="container has-text-centered">
-                  <div class="column is-4 is-offset-4">
+                  <div class="column is-8 is-offset-2">
                     <div>
                       <figure class="avatar">
                         <img :src="logo">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import logo from '@/assets/logo-sm.png'
+import logo from '@/assets/logo-tayuyon.png'
 export default {
   name: 'LoginView',
   components: {},
