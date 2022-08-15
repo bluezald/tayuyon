@@ -14,19 +14,19 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item">
               Home
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item">
               Orders
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item">
               Payments
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item">
               Exceptions
             </a>
-            <a class="navbar-item" href="admin.html">
+            <a class="navbar-item">
               Reports
             </a>
           </div>
@@ -258,7 +258,7 @@
 
 <script>
 export default {
-  name: 'AdminDashboard',
+  name: 'Dashboard',
   components: {}
 }
 </script>
