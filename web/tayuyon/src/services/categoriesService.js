@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const serviceInstance = axios.create({
-  baseURL: `${process.env.API_CATEGORIES_URL}`
+  baseURL: `${import.meta.env.VITE_API_CATEGORIES_URL}`
 })
 
 export default {

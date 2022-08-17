@@ -23,7 +23,8 @@ export function createRouter() {
         path: '/home',
         name: 'Home',
         component: Home
-      }
+      },
+      { path: '/:pathMatch(.*)*', redirect: '/login' },
     ]
   })
 }
