@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "92295d9ebd0140c59f1bdfb84ea73bd8768346b907a4b65ffd32ac61140d5423"
-build_start_time: [1688375796, 998656000]
-build_end_time: [1688375802, 70156000]
-inputs:
-  "/Users/vbacalso/Development/bluezald/tayuyon/mobile/tayuyon/tayuyon/macos/Flutter/GeneratedPluginRegistrant.swift": [1688375787, 119544331]
-  "/Users/vbacalso/Development/bluezald/tayuyon/mobile/tayuyon/tayuyon/macos/Runner/AppDelegate.swift": [1644397270, 0]
-  "/Users/vbacalso/Development/bluezald/tayuyon/mobile/tayuyon/tayuyon/macos/Runner/MainFlutterWindow.swift": [1644397270, 0]
