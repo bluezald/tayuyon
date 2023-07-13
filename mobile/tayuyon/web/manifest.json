@@ -1,6 +1,6 @@
 {
-    "name": "flutter_ecommerce_template",
-    "short_name": "flutter_ecommerce_template",
+    "name": "shop_app",
+    "short_name": "shop_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

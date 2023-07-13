@@ -1,8 +1,81 @@
-class Product{
-  String image;
-  String name;
-  String description;
-  double price;
+import 'package:flutter/material.dart';
 
-  Product(this.image, this.name, this.description, this.price);
+class Product {
+  final String image, title, description, isfav, code, brand, leather, rating;
+  final int price, size, id;
+  final Color color;
+  Product({
+    required this.id,
+    required this.isfav,
+    required this.image,
+    required this.title,
+    required this.code,
+    required this.brand,
+    required this.leather,
+    required this.rating,
+    required this.price,
+    required this.description,
+    required this.size,
+    required this.color,
+  });
 }
+
+List<Product> products = [
+  Product(
+      id: 1,
+      isfav: "false",
+      title: "Pink Bag",
+      code: "Y2d435",
+      brand: "Moon",
+      leather: "100%",
+      rating: "4.5",
+      price: 234,
+      size: 12,
+      description: dummyText,
+      image: "assets/images/bag_1.png",
+      color: const Color(0xFF3D82AE)),
+  Product(
+      id: 2,
+      title: "Leather Bag",
+      code: "Y2d435",
+      brand: "Moon",
+      leather: "80%",
+      rating: "4.5",
+      price: 234,
+      size: 8,
+      isfav: "true",
+      description: dummyText,
+      image: "assets/images/bag_2.png",
+      color: const Color(0xFFD3A984)),
+];
+List<Product> products_v2 = [
+  Product(
+      id: 3,
+      isfav: "false",
+      title: "Hobo Bag",
+      code: "Y2d435",
+      brand: "Moon",
+      leather: "50%",
+      rating: "4.5",
+      price: 234,
+      size: 10,
+      description: dummyText,
+      image: "assets/images/bag_3.png",
+      color: const Color(0xFF989493)),
+  Product(
+      id: 4,
+      isfav: "false",
+      title: "Queen Mini Bag",
+      code: "Y2d435",
+      brand: "Moon",
+      leather: "100%",
+      rating: "4.5",
+      price: 234,
+      size: 11,
+      description: dummyText,
+      image: "assets/images/bag_4.png",
+      color: const Color(0xFFE6B398)),
+];
+
+String dummyText =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";

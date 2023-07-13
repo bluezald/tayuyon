@@ -1,25 +1,19 @@
-
-import 'package:ecommerce_int2/screens/splash_page.dart';
 import 'package:flutter/material.dart';
+import 'package:tayuyon/screens/home/home_screen.dart';
 
-
-
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'eCommerce int2',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.light,
-        canvasColor: Colors.transparent,
-        primarySwatch: Colors.blue,
-        fontFamily: "Montserrat",
-      ),
-      home: SplashScreen(),
+      title: 'Flutter Demo',
+      home: HomeScreen(),
     );
   }
 }
