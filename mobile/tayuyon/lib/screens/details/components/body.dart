@@ -5,7 +5,6 @@ import '../../../screens/details/components/sizes.dart';
 
 import '../../../constants.dart';
 import 'cart_counter.dart';
-import 'color_and_size.dart';
 import 'description.dart';
 
 class Body extends StatelessWidget {
